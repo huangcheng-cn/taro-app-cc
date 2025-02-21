@@ -1,4 +1,9 @@
 PODS:
+  - AMap3DMap (9.6.2):
+    - AMapFoundation (>= 1.8.0)
+  - AMapFoundation (1.8.2)
+  - AMapLocation (2.9.0):
+    - AMapFoundation (>= 1.7.0)
   - boost (1.83.0)
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
@@ -984,6 +989,12 @@ PODS:
   - React-Mapbuffer (0.73.11):
     - glog
     - React-debug
+  - react-native-amap-geolocation (1.2.3):
+    - AMapLocation (~> 2.9.0)
+    - React
+  - react-native-amap3d (3.2.4):
+    - AMap3DMap (~> 9.6.0)
+    - React-Core
   - react-native-cameraroll (7.9.0):
     - glog
     - RCT-Folly (= 2022.05.16.00)
@@ -1268,6 +1279,8 @@ DEPENDENCIES:
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector-modern`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - React-Mapbuffer (from `../node_modules/react-native/ReactCommon`)
+  - react-native-amap-geolocation (from `../node_modules/react-native-amap-geolocation`)
+  - react-native-amap3d (from `../node_modules/react-native-amap3d`)
   - "react-native-cameraroll (from `../node_modules/@react-native-camera-roll/camera-roll`)"
   - "react-native-geolocation (from `../node_modules/@react-native-community/geolocation`)"
   - "react-native-image-resizer (from `../node_modules/@bam.tech/react-native-image-resizer`)"
@@ -1307,6 +1320,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AMap3DMap
+    - AMapFoundation
+    - AMapLocation
     - CocoaAsyncSocket
     - Flipper
     - Flipper-Boost-iOSX
@@ -1406,6 +1422,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/logger"
   React-Mapbuffer:
     :path: "../node_modules/react-native/ReactCommon"
+  react-native-amap-geolocation:
+    :path: "../node_modules/react-native-amap-geolocation"
+  react-native-amap3d:
+    :path: "../node_modules/react-native-amap3d"
   react-native-cameraroll:
     :path: "../node_modules/@react-native-camera-roll/camera-roll"
   react-native-geolocation:
@@ -1480,6 +1500,9 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  AMap3DMap: 1d24615b754c2ac5a92258b59729e60a6d478205
+  AMapFoundation: 9885c48fc3a78fdfb84a0299a2293e56ea3c9fec
+  AMapLocation: f5eb11e11c62f0f599f80b578eec8a1f70deb985
   boost: 8c112e3624dc4a1e0daf347eeb1aa4b0e6c80ee2
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: fea03f2699887d960129cc54bba7e52542b6f953
@@ -1533,6 +1556,8 @@ SPEC CHECKSUMS:
   React-jsinspector: a98428936fb888cc15d857226a26d9ac0a668a0e
   React-logger: 6e4873d1f9c54cca30f6c91a6617f8c91b75ba4c
   React-Mapbuffer: 57bf49a458398d329dad2bf8bc660e3e35b96989
+  react-native-amap-geolocation: dd936a17a49c41d5ed9c17f681158ee78809aa68
+  react-native-amap3d: 5d7ca88ba2d440169e5cf3c101547cac0ac73a6a
   react-native-cameraroll: 4e85828a3f426317fa2521f69639b1a6a8160fd7
   react-native-geolocation: 49ea939d13f095705a71891555cc76215e63ec6a
   react-native-image-resizer: 24c5d06fae2176dc0caed4b6396e02befb44064a
@@ -1572,6 +1597,6 @@ SPEC CHECKSUMS:
   Yoga: a813a6d82538ccba91c54406404e3ed80b48a692
   ZXingObjC: 8898711ab495761b2dbbdec76d90164a6d7e14c5
 
-PODFILE CHECKSUM: e38b7441c79d1d676dcd6df68b34b1e0143ca814
+PODFILE CHECKSUM: 1957cfd4994bc4b6627425151b18096c5aea97bb
 
 COCOAPODS: 1.16.2
