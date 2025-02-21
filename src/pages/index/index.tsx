@@ -1,10 +1,7 @@
 import { Component, PropsWithChildren } from 'react'
 import { View, Text } from '@tarojs/components'
-import RootSiblings from 'react-native-root-siblings'
 
 import './index.scss'
-import Taro from '@tarojs/taro'
-import { startTracking } from '../../utils/Location'
 
 export default class Index extends Component<PropsWithChildren> {
 
@@ -13,7 +10,6 @@ export default class Index extends Component<PropsWithChildren> {
   componentWillUnmount () { }
 
   componentDidShow () {
-    setTimeout(startTracking, 3000)
   }
 
   componentDidHide () { }
@@ -21,9 +17,6 @@ export default class Index extends Component<PropsWithChildren> {
   render () {
     return (
       <View className='index'>
-        { (new Array(1000).fill(1)).map((_item, index) => {
-          return <View key={index}>{index}</View>
-        })}
       </View>
     )
   }

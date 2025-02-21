@@ -21,5 +21,5 @@ export default defineAppConfig({
         text: '我的',
       }
     ]
-  }
+  },
 })
